@@ -1,32 +1,48 @@
 # MEMOREK
 
-Darmowy program dla Windows do rozmowy z agentem Codex i przechowywania historii lokalnie.
-Autor: rWin.
+**Rozmowa z agentem AI i lokalna pamięć — w jednym oknie Windows.**
 
-## Pobierz gotowy program
+Darmowy program autorstwa **rWin**. Poniżej znajdziesz wygląd programu, jego możliwości i instrukcję obsługi na zrzutach ekranu z wersji **0.5.74**.
 
-Otwórz [wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases) i pobierz załącznik
-**MEMOREK-klient-0.5.74.zip**. Rozpakuj cały ZIP do zapisywalnego folderu i uruchom `MEMOREK.exe`.
+## Pobierz program
 
-Paczka wydania zawiera wymagany backend Codexa. Kompilator nie jest potrzebny.
-Zaloguj się w programie na własne konto i wybierz dostępny model.
-Do rozmowy potrzebny jest internet oraz dostęp do usług dostawcy modeli.
-Darmowy program nie oznacza darmowego dostępu do usług AI.
+**[Przejdź do wydań i pobierz kompletny ZIP](https://github.com/erwinsts/MEMOREK/releases)**
 
-## Ważne pliki
+W sekcji **Assets** wybierz `MEMOREK-klient-0.5.74.zip`. Rozpakuj cały ZIP i uruchom `MEMOREK.exe`.
+Archiwa „Source code” są automatycznymi kopiami tej strony pomocy — nie zawierają programu.
 
-- `native-data` powstaje przy uruchomieniu i zawiera prywatną historię, ustawienia oraz profil logowania.
-- `workspace` jest folderem roboczym agenta.
-- `tools/codex` zawiera backend; jest dostarczany w załączniku ZIP w sekcji Releases.
-- Informacje licencyjne składników zewnętrznych znajdują się w `licenses` w paczce.
+Do uruchomienia gotowej paczki nie potrzeba kompilatora. Rozmowa z AI wymaga internetu, własnego konta i dostępu do usług dostawcy modeli. Sam MEMOREK jest darmowy; usługi AI mogą być płatne lub ograniczone limitami konta.
 
-Zachowaj kopię danych przed aktualizacją. Nie publikuj używanego katalogu `native-data`.
-Domyślnie pracuj w trybie tylko do odczytu. Dostęp do systemu umożliwia agentowi wykonywanie działań na Twoim komputerze.
+## Wygląd programu
 
-## Wersja 0.5.74
+![Główne okno MEMORKA 0.5.74](docs/screeny/01-okno-programu.png)
 
-Usunięto ikonę banknotu i kwotę kosztu przy odpowiedziach.
-Zachowano zbiorczy szacunkowy licznik kosztów na górnym pasku.
+## Co potrafi MEMOREK?
 
-To repozytorium dystrybucyjne. Pliki w katalogu wersji nie są kompletną instalacją bez backendu.
-Do uruchomienia pobierz załącznik wydania, zamiast automatycznego archiwum „Source code”.
+![Możliwości programu: rozmowy, kodowanie, lokalna pamięć, obrazy i praca z plikami](docs/screeny/02-mozliwosci.png)
+
+## Pierwsze uruchomienie i połączenie
+
+![Jak połączyć Codex, zalogować się, wybrać model i wysłać wiadomość](docs/screeny/03-pierwsze-polaczenie.png)
+
+## Pamięć rozmów i pliki
+
+![Jak działa lokalny zapis i wyszukiwanie w pamięci](docs/screeny/04-pamiec.png)
+
+## Dostęp do systemu i instalacji
+
+![Jak włączyć dostęp do systemu i co oznaczają uprawnienia agenta](docs/screeny/05-dostep-do-systemu.png)
+
+## Obsługa i skróty
+
+![Skróty klawiaturowe, rozmowy, wiadomości i przewijanie](docs/screeny/06-skroty.png)
+
+## Dane i wymagania
+
+- Windows x64, zapisywalny folder programu i pełna zawartość ZIP-a.
+- `native-data` i `workspace` powstają podczas używania programu. Nie publikuj swoich rozmów ani profilu logowania.
+- Zrób kopię danych przed aktualizacją. Nie uruchamiaj kilku kopii nad tą samą bazą.
+- Dostęp do systemu pozwala agentowi wykonywać działania na Twoim komputerze. Sprawdzaj jego pracę.
+- Licencje składników zewnętrznych są dołączone do kompletnej paczki programu.
+
+To repozytorium zawiera wyłącznie opis, instrukcję i screeny. **Kompletny program jest dystrybuowany osobno przez Releases.**
