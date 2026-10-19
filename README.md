@@ -1,4 +1,4 @@
-# MEMOREK 0.5.80 — pomoc
+# MEMOREK — instrukcja obsługi
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
@@ -8,13 +8,7 @@ Cała poniższa instrukcja dotyczy **wersji 0.5.80**.
 
 *Aktualne okno programu w wersji 0.5.80. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
-## Pobieranie i wymagania
-
-**ZIP 0.5.80 jest przygotowany, ale wydanie nie zostało jeszcze opublikowane w Releases.**
-
-Po publikacji otwórz **[Wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**. Pod opisem wydania rozwiń **Assets** i pobierz **MEMOREK-klient-0.5.80.zip**. Automatyczne pliki „Source code” zawierają tę pomoc, a nie gotowy program.
-
-Potrzebujesz **Windows x64**, folderu z prawem zapisu oraz internetu do rozmowy z AI. Kompilator nie jest potrzebny. Używasz własnego konta; dostęp do modeli i limity zależą od usługi AI. Sam MEMOREK jest darmowy.
+Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi. Uruchom cały rozpakowany program w folderze z prawem zapisu na Windows x64.
 
 ## Pierwsze uruchomienie
 
@@ -58,12 +52,56 @@ Panel po lewej pokazuje pozostały limit konta oraz termin odnowienia, jeśli us
 
 Licznik **$ na górze** pokazuje szacunkową wartość według stawek API. Nie jest rachunkiem za abonament ani dokładną kwotą pobraną z konta. Kliknij licznik, aby zmienić okres lub wybrać **Wyzeruj licznik dolarów**.
 
-## Aktualizacja i własne dane
+## Czytanie i kopiowanie wiadomości
 
-Od 0.5.80 program sprawdza **GitHub Releases przy uruchomieniu i co godzinę**. Gdy znajdzie nowsze kompletne wydanie, na górze pojawia się **Aktualizuj**. Po kliknięciu pobiera pełny ZIP, sprawdza sumę SHA-256 oraz pliki paczki, czeka na zakończenie odpowiedzi i zapis rozmowy, a następnie podmienia pliki programu i uruchamia go ponownie. Błąd instalacji powoduje przywrócenie poprzednich plików.
+Przewijaj rozmowę kółkiem myszy lub paskiem po prawej. Podczas pisania odpowiedzi możesz wrócić do wcześniejszych wiadomości. Przewiń na sam dół, aby śledzić dalszy ciąg odpowiedzi.
 
-**Osoby używające starszych wersji muszą pierwszy ZIP 0.5.80 pobrać i rozpakować ręcznie.** Kolejne wydania będą już wykrywane przez program. Brak internetu nie blokuje pracy; sprawdzanie odbywa się w tle.
+Najedź na wiadomość, aby pokazać przyciski kopiowania i usuwania. Usuwanie jest dostępne po zakończeniu odpowiedzi.
 
-Własne dane są w **native-data**, a pliki robocze we **workspace**. Zachowaj ich kopię przed przenoszeniem lub aktualizacją. Nie zastępuj własnego folderu danych pustą kopią. Paczka kliencka jest przygotowana bez rozmów i logowania autora.
+## Jak zlecać zadania
 
-Wiadomości i załączniki używane w rozmowie są przekazywane do usługi AI. Nie publikuj własnego folderu danych razem z programem.
+Napisz, jaki efekt chcesz uzyskać, i podaj potrzebne szczegóły. Przykłady:
+
+- „Wyjaśnij prostymi słowami błąd widoczny na załączonym obrazie”.
+- „Znajdź w pamięci nasze ustalenia dotyczące strony firmowej”.
+- „W folderze C:\Projekty\MojaStrona popraw menu na telefonach”.
+
+Do pracy z plikami podaj dokładny folder. Przy plikach wskazanych w odpowiedzi mogą pojawić się kafelki **Otwórz folder**. Oznaczenie rozmowy jako projektu służy organizacji; rozmowy korzystają ze wspólnego folderu **workspace**.
+
+## Konto i połączenie
+
+**Rozłącz** kończy połączenie z Codexem. Aby wrócić do pracy, kliknij **Połącz Codex**. **Wyloguj z Codexa** wylogowuje konto używane przez MEMORKA.
+
+Listę modeli program pobiera po połączeniu. Wybieraj model z listy **SILNIK I MODEL**.
+
+Panel **CACHE** dotyczy wykorzystania pamięci podręcznej wejścia modelu. Nie pokazuje zajętości dysku ani zapełnienia archiwum rozmów.
+
+## Własne dane
+
+Folder **native-data** zawiera rozmowy, załączniki, ustawienia i profil logowania. **workspace** zawiera pliki robocze. Zamknij program przed wykonaniem kopii tych folderów. Nie publikuj własnego folderu danych.
+
+Główna baza rozmów jest szyfrowana przez Windows DPAPI, powiązane z kontem Windows. Przeniesienie jej na inne konto lub komputer może uniemożliwić odczyt. Załączniki i profil Codexa pozostają poza tym szyfrowaniem bazy.
+
+Wiadomości i obrazy używane w rozmowie są przekazywane do usługi AI.
+
+## Gdy coś nie działa
+
+| Problem | Co zrobić |
+| --- | --- |
+| Nie można rozpocząć rozmowy | Sprawdź internet, kliknij **Połącz Codex** i dokończ logowanie, jeśli jest wymagane. |
+| Brak modeli na liście | Najpierw połącz Codex i sprawdź zalogowane konto. |
+| Enter nie wysyła wiadomości | Użyj **Ctrl+Enter** albo fioletowej strzałki. |
+| AI nie może zmienić pliku | Przed wysłaniem zadania włącz **Dostęp do systemu i instalacji** i podaj dokładną ścieżkę. |
+| Nie można dodać obrazu | Sprawdź format, rozmiar do 20 MB i limit 4 obrazów. |
+| Nie znajduję wiadomości | W **Szukaj w pamięci** spróbuj krótszego hasła lub innego słowa. |
+
+## Skróty
+
+| Skrót | Działanie |
+| --- | --- |
+| **Ctrl+Enter** | Wyślij wiadomość |
+| **Enter** | Dodaj nową linię |
+| **Ctrl+F** w polu wiadomości | Otwórz wyszukiwanie pamięci |
+| **F1** | Otwórz pomoc |
+
+Autor: **rWin**. MEMOREK jest darmowy; korzystanie z usług AI może wymagać opłat u dostawcy. AI może się mylić — sprawdzaj odpowiedzi i wykonywane zmiany.
