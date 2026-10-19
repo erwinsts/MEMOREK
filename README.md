@@ -4,9 +4,9 @@ Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołącz
 
 Cała poniższa instrukcja dotyczy **wersji 0.5.80**.
 
-[![MEMOREK 0.5.80 — przykładowa wiadomość z czterema obrazami](docs/screeny/memorek-0.5.80.png)](docs/screeny/memorek-0.5.80.png)
+[![MEMOREK 0.5.80 — okno programu](docs/screeny/memorek-0.5.80.png)](docs/screeny/memorek-0.5.80.png)
 
-*Aktualne okno programu na profilu demonstracyjnym. Kliknij obraz, aby otworzyć pełny rozmiar.*
+*Aktualne okno programu w wersji 0.5.80. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
 ## Pobieranie i wymagania
 
