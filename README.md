@@ -4,6 +4,12 @@
 
 Darmowy program autorstwa **rWin**. Poniżej znajdziesz wygląd programu, jego możliwości i instrukcję obsługi na zrzutach ekranu z wersji **0.5.74**.
 
+## Przykład pracy z agentem
+
+MEMOREK pozwala zlecać agentowi pracę nad programem: zmiany w kodzie, kompilację, testowanie i przygotowanie paczki. Na screenie widać taką rozmowę oraz przyciski otwierania folderu z wynikiem. Ścieżki do prywatnych plików są zasłonięte. Zrzut pochodzi z wersji 0.5.73; pozostałe screeny pokazują wersję 0.5.74.
+
+![Przykład pracy: agent zmienia program, kompiluje, testuje i przygotowuje paczkę](docs/screeny/07-przyklad-pracy.png)
+
 ## Jak pobrać i uruchomić program?
 
 **Paczka programu nie jest jeszcze opublikowana. Na razie ta strona zawiera instrukcję i screeny.**
