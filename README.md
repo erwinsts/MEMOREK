@@ -4,12 +4,20 @@
 
 Darmowy program autorstwa **rWin**. Poniżej znajdziesz wygląd programu, jego możliwości i instrukcję obsługi na zrzutach ekranu z wersji **0.5.74**.
 
-## Pobierz program
+## Jak pobrać i uruchomić program?
 
-**[Przejdź do wydań i pobierz kompletny ZIP](https://github.com/erwinsts/MEMOREK/releases)**
+**Paczka programu nie jest jeszcze opublikowana. Na razie ta strona zawiera instrukcję i screeny.**
 
-W sekcji **Assets** wybierz `MEMOREK-klient-0.5.74.zip`. Rozpakuj cały ZIP i uruchom `MEMOREK.exe`.
-Archiwa „Source code” są automatycznymi kopiami tej strony pomocy — nie zawierają programu.
+Po opublikowaniu paczki:
+
+1. Kliknij **[Pobierz program — wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**.
+2. Otwórz najnowsze wydanie i przewiń pod jego opis.
+3. Znajdź **Assets** — to lista plików do pobrania. Jeśli jest zwinięta, kliknij jej nazwę.
+4. Kliknij **MEMOREK-klient-0.5.74.zip** i poczekaj na pobranie.
+5. Kliknij pobrany ZIP prawym przyciskiem myszy i wybierz **Wyodrębnij wszystkie**.
+6. Otwórz rozpakowany folder i uruchom **MEMOREK.exe**. Pozostaw obok niego wszystkie dołączone pliki i foldery.
+
+**Nie pobieraj „Source code (zip)” ani „Source code (tar.gz)”** — zawierają tę stronę pomocy, a nie gotowy program.
 
 Do uruchomienia gotowej paczki nie potrzeba kompilatora. Rozmowa z AI wymaga internetu, własnego konta i dostępu do usług dostawcy modeli. Sam MEMOREK jest darmowy; usługi AI mogą być płatne lub ograniczone limitami konta.
 
