@@ -1,0 +1,12 @@
+# Lokalny stan programu i dane konta
+**/native-data/
+**/workspace/
+**/.env
+**/auth.json
+
+# Duze pliki backendu sa dolaczane do ZIP-a w GitHub Releases
+**/tools/
+*.zip
+*.log
+*.pdb
+*.obj
