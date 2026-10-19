@@ -1,70 +1,67 @@
-# MEMOREK
+# MEMOREK 0.5.79 — pomoc
 
-**Rozmowa z agentem AI i lokalna pamięć — w jednym oknie Windows.**
+Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Darmowy program autorstwa **rWin**. Poniżej znajdziesz wygląd programu, jego możliwości i instrukcję obsługi na zrzutach ekranu Aktualna wersja programu: **0.5.79**. Starsze zrzuty pomocy są podpisane numerem wersji.
+Cała poniższa instrukcja dotyczy **wersji 0.5.79**.
 
-## MEMOREK 0.5.79 — aktualny wygląd
+[![MEMOREK 0.5.79 — przykładowa wiadomość z czterema obrazami](docs/screeny/memorek-0.5.79.png)](docs/screeny/memorek-0.5.79.png)
 
-Wybierz do czterech obrazów naraz przez Ctrl lub Shift. W rozmowie pojawiają się pogrubione nazwy plików — kliknij nazwę, aby otworzyć obraz. Poniżej przykładowa wiadomość na profilu demonstracyjnym.
+*Aktualne okno programu na profilu demonstracyjnym. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
-[![MEMOREK 0.5.79: cztery załączniki, czarny spinacz i licznik na górnym pasku](docs/screeny/08-memorek-0.5.79.png)](docs/screeny/08-memorek-0.5.79.png)
+## Pobieranie i wymagania
 
-## Przykład pracy z agentem
+**ZIP 0.5.79 jest przygotowany, ale wydanie nie zostało jeszcze opublikowane w Releases.**
 
-MEMOREK pozwala zlecać agentowi pracę nad programem: zmiany w kodzie, kompilację, testowanie i przygotowanie paczki. Na screenie widać taką rozmowę oraz przyciski otwierania folderu z wynikiem. Ścieżki do prywatnych plików są zasłonięte. Zrzut pochodzi z wersji 0.5.73; pozostałe screeny pokazują wersję 0.5.74.
+Po publikacji otwórz **[Wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**. Pod opisem wydania rozwiń **Assets** i pobierz **MEMOREK-klient-0.5.79.zip**. Automatyczne pliki „Source code” zawierają tę pomoc, a nie gotowy program.
 
-[![Przykład pracy: agent zmienia program, kompiluje, testuje i przygotowuje paczkę](docs/screeny/07-przyklad-pracy.png)](docs/screeny/07-przyklad-pracy.png)
+Potrzebujesz **Windows x64**, folderu z prawem zapisu oraz internetu do rozmowy z AI. Kompilator nie jest potrzebny. Używasz własnego konta; dostęp do modeli i limity zależą od usługi AI. Sam MEMOREK jest darmowy.
 
-Kliknij obraz, aby otworzyć go w pełnym rozmiarze.
+## Pierwsze uruchomienie
 
-## Jak pobrać i uruchomić program?
+1. Kliknij pobrany ZIP prawym przyciskiem i wybierz **Wyodrębnij wszystkie**.
+2. Otwórz rozpakowany folder **MEMOREK** i uruchom **MEMOREK.exe**. Zostaw obok wszystkie dołączone pliki i foldery.
+3. Kliknij **Połącz Codex** na górze okna.
+4. Kliknij **Zaloguj przez ChatGPT**, dokończ logowanie w przeglądarce i wróć do programu.
+5. Wybierz model z listy **SILNIK I MODEL** po lewej.
+6. Wpisz wiadomość na dole. Wyślij ją fioletową strzałką lub skrótem **Ctrl+Enter**.
 
-**Paczka programu nie jest jeszcze opublikowana. Na razie ta strona zawiera instrukcję i screeny.**
+**Enter** dodaje nową linię. Po ponownym uruchomieniu połącz Codex; zapisane logowanie zwykle pozwala pominąć przeglądarkę.
 
-Po opublikowaniu paczki:
+## Obrazy i załączniki
 
-1. Kliknij **[Pobierz program — wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**.
-2. Otwórz najnowsze wydanie i przewiń pod jego opis.
-3. Znajdź **Assets** — to lista plików do pobrania. Jeśli jest zwinięta, kliknij jej nazwę.
-4. Kliknij **MEMOREK-klient-0.5.79.zip** i poczekaj na pobranie.
-5. Kliknij pobrany ZIP prawym przyciskiem myszy i wybierz **Wyodrębnij wszystkie**.
-6. Otwórz rozpakowany folder i uruchom **MEMOREK.exe**. Pozostaw obok niego wszystkie dołączone pliki i foldery.
+1. Kliknij przycisk z **czarnym spinaczem** obok pola wiadomości.
+2. Zaznacz obrazy. Przytrzymaj **Ctrl**, aby wybrać kilka pojedynczych plików, albo **Shift**, aby zaznaczyć zakres.
+3. Kliknij **Otwórz**. Liczba na przycisku spinacza oraz komunikat na dole potwierdzają dodanie plików.
+4. Dopisz pytanie i wyślij. Możesz też wysłać same obrazy — program doda prośbę o ich analizę.
 
-**Nie pobieraj „Source code (zip)” ani „Source code (tar.gz)”** — zawierają tę stronę pomocy, a nie gotowy program.
+Limit to **4 obrazy łącznie na wiadomość**, do **20 MB każdy**. Obsługiwane formaty: **PNG, JPG/JPEG i WEBP**. Możesz zaznaczyć obrazy naraz albo dodawać partiami. Jeśli przekroczysz limit, ostatnio wybrana partia nie zostanie dodana.
 
-Do uruchomienia gotowej paczki nie potrzeba kompilatora. Rozmowa z AI wymaga internetu, własnego konta i dostępu do usług dostawcy modeli. Sam MEMOREK jest darmowy; usługi AI mogą być płatne lub ograniczone limitami konta.
+Po wysłaniu pod Twoją wiadomością pojawią się **pogrubione nazwy plików**. Kliknij nazwę, aby otworzyć obraz. MEMOREK zachowuje lokalną kopię załącznika. Spinacz nie obsługuje obecnie ZIP-ów, PDF-ów ani dowolnych innych plików.
 
-## Wygląd programu
+## Rozmowy i pamięć
 
-![Główne okno MEMORKA 0.5.74](docs/screeny/01-okno-programu.png)
+**+ Nowa rozmowa** tworzy osobny wątek. Wybieraj rozmowy na liście po lewej. Menu pod trzema kropkami pozwala zmienić nazwę, kategorię, oznaczyć projekt lub usunąć rozmowę.
 
-## Co potrafi MEMOREK?
+Rozmowy zapisują się lokalnie i pozostają po zamknięciu programu. **Szukaj w pamięci** otwiera archiwum: wpisz słowa, kliknij **Szukaj** i wybierz wynik. Samo przeglądanie zapisanej pamięci działa bez internetu. Możesz też poprosić agenta o odnalezienie wcześniejszego ustalenia.
 
-![Możliwości programu: rozmowy, kodowanie, lokalna pamięć, obrazy i praca z plikami](docs/screeny/02-mozliwosci.png)
+**Ctrl+F** w polu wiadomości otwiera wyszukiwanie pamięci. **F1** otwiera pomoc w programie.
 
-## Pierwsze uruchomienie i połączenie
+## Kodowanie i dostęp do komputera
 
-![Jak połączyć Codex, zalogować się, wybrać model i wysłać wiadomość](docs/screeny/03-pierwsze-polaczenie.png)
+Przed wysłaniem zadania wymagającego zmian zaznacz **Dostęp do systemu i instalacji** i przeczytaj komunikat potwierdzenia. Agent może wtedy edytować pliki, uruchamiać polecenia, kompilować kod i wykonywać instalacje, zależnie od dostępnych narzędzi i uprawnień konta Windows.
 
-## Pamięć rozmów i pliki
+Bez tej opcji działa w trybie tylko do odczytu. Podaj folder i konkretny cel, np. „Sprawdź projekt w tym katalogu i napraw błąd kompilacji”. Dostęp trzeba ponownie włączyć po uruchomieniu programu.
 
-![Jak działa lokalny zapis i wyszukiwanie w pamięci](docs/screeny/04-pamiec.png)
+## Limity konta i licznik dolarów
 
-## Dostęp do systemu i instalacji
+Panel po lewej pokazuje pozostały limit konta oraz termin odnowienia, jeśli usługa udostępnia dane. **„Limit nieudostępniony”** oznacza brak danych.
 
-![Jak włączyć dostęp do systemu i co oznaczają uprawnienia agenta](docs/screeny/05-dostep-do-systemu.png)
+Licznik **$ na górze** pokazuje szacunkową wartość według stawek API. Nie jest rachunkiem za abonament ani dokładną kwotą pobraną z konta. Kliknij licznik, aby zmienić okres lub wybrać **Wyzeruj licznik dolarów**.
 
-## Obsługa i skróty
+## Aktualizacja i własne dane
 
-![Skróty klawiaturowe, rozmowy, wiadomości i przewijanie](docs/screeny/06-skroty.png)
+Gdy program wykryje przygotowaną nowszą wersję, na górze pojawia się **Aktualizuj**. Aktualizator czeka na zakończenie odpowiedzi i zapis rozmowy, następnie podmienia program i uruchamia go ponownie.
 
-## Dane i wymagania
+Własne dane są w **native-data**, a pliki robocze we **workspace**. Zachowaj ich kopię przed przenoszeniem lub aktualizacją. Nie zastępuj własnego folderu danych pustą kopią. Paczka kliencka jest przygotowana bez rozmów i logowania autora.
 
-- Windows x64, zapisywalny folder programu i pełna zawartość ZIP-a.
-- `native-data` i `workspace` powstają podczas używania programu. Nie publikuj swoich rozmów ani profilu logowania.
-- Zrób kopię danych przed aktualizacją. Nie uruchamiaj kilku kopii nad tą samą bazą.
-- Dostęp do systemu pozwala agentowi wykonywać działania na Twoim komputerze. Sprawdzaj jego pracę.
-- Licencje składników zewnętrznych są dołączone do kompletnej paczki programu.
-
-To repozytorium zawiera wyłącznie opis, instrukcję i screeny. **Kompletny program jest dystrybuowany osobno przez Releases.**
+Wiadomości i załączniki używane w rozmowie są przekazywane do usługi AI. Nie publikuj własnego folderu danych razem z programem.
