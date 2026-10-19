@@ -2,11 +2,11 @@
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Cała poniższa instrukcja dotyczy **wersji 0.5.80**.
+Cała poniższa instrukcja dotyczy **wersji 0.5.81**.
 
-[![MEMOREK 0.5.80 — okno programu](docs/screeny/memorek-0.5.80.png)](docs/screeny/memorek-0.5.80.png)
+[![MEMOREK 0.5.81 — okno programu](docs/screeny/memorek-0.5.81.png)](docs/screeny/memorek-0.5.81.png)
 
-*Aktualne okno programu w wersji 0.5.80. Kliknij obraz, aby otworzyć pełny rozmiar.*
+*Aktualne okno programu w wersji 0.5.81. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
 Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi. Uruchom cały rozpakowany program w folderze z prawem zapisu na Windows x64.
 
