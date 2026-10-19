@@ -1,18 +1,18 @@
-# MEMOREK 0.5.79 — pomoc
+# MEMOREK 0.5.80 — pomoc
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Cała poniższa instrukcja dotyczy **wersji 0.5.79**.
+Cała poniższa instrukcja dotyczy **wersji 0.5.80**.
 
-[![MEMOREK 0.5.79 — przykładowa wiadomość z czterema obrazami](docs/screeny/memorek-0.5.79.png)](docs/screeny/memorek-0.5.79.png)
+[![MEMOREK 0.5.80 — przykładowa wiadomość z czterema obrazami](docs/screeny/memorek-0.5.80.png)](docs/screeny/memorek-0.5.80.png)
 
 *Aktualne okno programu na profilu demonstracyjnym. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
 ## Pobieranie i wymagania
 
-**ZIP 0.5.79 jest przygotowany, ale wydanie nie zostało jeszcze opublikowane w Releases.**
+**ZIP 0.5.80 jest przygotowany, ale wydanie nie zostało jeszcze opublikowane w Releases.**
 
-Po publikacji otwórz **[Wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**. Pod opisem wydania rozwiń **Assets** i pobierz **MEMOREK-klient-0.5.79.zip**. Automatyczne pliki „Source code” zawierają tę pomoc, a nie gotowy program.
+Po publikacji otwórz **[Wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**. Pod opisem wydania rozwiń **Assets** i pobierz **MEMOREK-klient-0.5.80.zip**. Automatyczne pliki „Source code” zawierają tę pomoc, a nie gotowy program.
 
 Potrzebujesz **Windows x64**, folderu z prawem zapisu oraz internetu do rozmowy z AI. Kompilator nie jest potrzebny. Używasz własnego konta; dostęp do modeli i limity zależą od usługi AI. Sam MEMOREK jest darmowy.
 
@@ -60,7 +60,9 @@ Licznik **$ na górze** pokazuje szacunkową wartość według stawek API. Nie j
 
 ## Aktualizacja i własne dane
 
-Gdy program wykryje przygotowaną nowszą wersję, na górze pojawia się **Aktualizuj**. Aktualizator czeka na zakończenie odpowiedzi i zapis rozmowy, następnie podmienia program i uruchamia go ponownie.
+Od 0.5.80 program sprawdza **GitHub Releases przy uruchomieniu i co godzinę**. Gdy znajdzie nowsze kompletne wydanie, na górze pojawia się **Aktualizuj**. Po kliknięciu pobiera pełny ZIP, sprawdza sumę SHA-256 oraz pliki paczki, czeka na zakończenie odpowiedzi i zapis rozmowy, a następnie podmienia pliki programu i uruchamia go ponownie. Błąd instalacji powoduje przywrócenie poprzednich plików.
+
+**Osoby używające starszych wersji muszą pierwszy ZIP 0.5.80 pobrać i rozpakować ręcznie.** Kolejne wydania będą już wykrywane przez program. Brak internetu nie blokuje pracy; sprawdzanie odbywa się w tle.
 
 Własne dane są w **native-data**, a pliki robocze we **workspace**. Zachowaj ich kopię przed przenoszeniem lub aktualizacją. Nie zastępuj własnego folderu danych pustą kopią. Paczka kliencka jest przygotowana bez rozmów i logowania autora.
 
