@@ -2,7 +2,13 @@
 
 **Rozmowa z agentem AI i lokalna pamięć — w jednym oknie Windows.**
 
-Darmowy program autorstwa **rWin**. Poniżej znajdziesz wygląd programu, jego możliwości i instrukcję obsługi na zrzutach ekranu z wersji **0.5.74**.
+Darmowy program autorstwa **rWin**. Poniżej znajdziesz wygląd programu, jego możliwości i instrukcję obsługi na zrzutach ekranu Aktualna wersja programu: **0.5.79**. Starsze zrzuty pomocy są podpisane numerem wersji.
+
+## MEMOREK 0.5.79 — aktualny wygląd
+
+Wybierz do czterech obrazów naraz przez Ctrl lub Shift. W rozmowie pojawiają się pogrubione nazwy plików — kliknij nazwę, aby otworzyć obraz. Poniżej przykładowa wiadomość na profilu demonstracyjnym.
+
+[![MEMOREK 0.5.79: cztery załączniki, czarny spinacz i licznik na górnym pasku](docs/screeny/08-memorek-0.5.79.png)](docs/screeny/08-memorek-0.5.79.png)
 
 ## Przykład pracy z agentem
 
@@ -21,7 +27,7 @@ Po opublikowaniu paczki:
 1. Kliknij **[Pobierz program — wydania MEMORKA](https://github.com/erwinsts/MEMOREK/releases)**.
 2. Otwórz najnowsze wydanie i przewiń pod jego opis.
 3. Znajdź **Assets** — to lista plików do pobrania. Jeśli jest zwinięta, kliknij jej nazwę.
-4. Kliknij **MEMOREK-klient-0.5.74.zip** i poczekaj na pobranie.
+4. Kliknij **MEMOREK-klient-0.5.79.zip** i poczekaj na pobranie.
 5. Kliknij pobrany ZIP prawym przyciskiem myszy i wybierz **Wyodrębnij wszystkie**.
 6. Otwórz rozpakowany folder i uruchom **MEMOREK.exe**. Pozostaw obok niego wszystkie dołączone pliki i foldery.
 
