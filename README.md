@@ -2,7 +2,7 @@
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Cała poniższa instrukcja dotyczy **wersji 0.5.81**.
+Aktualne wydanie: **0.5.101** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.101). Usunięto moduł Watch i powiązany monitoring procesów oraz TCP. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
 
 [![MEMOREK 0.5.81 — okno programu](docs/screeny/memorek-0.5.81.png)](docs/screeny/memorek-0.5.81.png)
 
