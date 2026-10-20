@@ -2,7 +2,7 @@
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Aktualne wydanie: **0.5.101** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.101). Usunięto moduł Watch i powiązany monitoring procesów oraz TCP. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
+Aktualne wydanie: **0.5.101** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.101). Dodano logowanie przez API przy użyciu własnego klucza API. Usunięto moduł Watch i powiązany monitoring procesów oraz TCP. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
 
 [![MEMOREK 0.5.81 — okno programu](docs/screeny/memorek-0.5.81.png)](docs/screeny/memorek-0.5.81.png)
 
@@ -15,7 +15,7 @@ Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi.
 1. Kliknij pobrany ZIP prawym przyciskiem i wybierz **Wyodrębnij wszystkie**.
 2. Otwórz rozpakowany folder **MEMOREK** i uruchom **MEMOREK.exe**. Zostaw obok wszystkie dołączone pliki i foldery.
 3. Kliknij **Połącz Codex** na górze okna.
-4. Kliknij **Zaloguj przez ChatGPT**, dokończ logowanie w przeglądarce i wróć do programu.
+4. Kliknij **Zaloguj przez ChatGPT**, dokończ logowanie w przeglądarce i wróć do programu. Możesz też zalogować się przez API, wpisując własny klucz API i zatwierdzając go przyciskiem **OK**.
 5. Wybierz model z listy **SILNIK I MODEL** po lewej.
 6. Wpisz wiadomość na dole. Wyślij ją fioletową strzałką lub skrótem **Ctrl+Enter**.
 
