@@ -4,9 +4,9 @@ Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołącz
 
 Aktualne wydanie: **0.5.101** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.101). Dodano logowanie przez API przy użyciu własnego klucza API. Poprawiono algorytm optymalizacji zapytań. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
 
-[![MEMOREK 0.5.81 — okno programu](docs/screeny/memorek-0.5.81.png)](docs/screeny/memorek-0.5.81.png)
+[![MEMOREK 0.5.101 — okno programu](docs/screeny/memorek-0.5.101.png)](docs/screeny/memorek-0.5.101.png)
 
-*Aktualne okno programu w wersji 0.5.81. Kliknij obraz, aby otworzyć pełny rozmiar.*
+*Aktualne okno programu w wersji 0.5.101. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
 Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi. Uruchom cały rozpakowany program w folderze z prawem zapisu na Windows x64.
 
@@ -20,6 +20,25 @@ Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi.
 6. Wpisz wiadomość na dole. Wyślij ją fioletową strzałką lub skrótem **Ctrl+Enter**.
 
 **Enter** dodaje nową linię. Po ponownym uruchomieniu połącz Codex; zapisane logowanie zwykle pozwala pominąć przeglądarkę.
+
+## Co nowego w 0.5.101
+
+- Dodano logowanie przez API przy użyciu własnego klucza OpenAI API.
+- W trybie API dostępne są szacunkowe miesięczne użycie i ustawienie budżetu w USD.
+- Poprawiono algorytm optymalizacji zapytań.
+
+## Logowanie własnym kluczem API
+
+1. Kliknij **Połącz Codex** i poczekaj na połączenie.
+2. Wklej własny klucz w pole **Wklej klucz OpenAI API** na górze okna i kliknij **OK**.
+3. Poczekaj na sprawdzenie klucza i komunikat **Zalogowano przez API**.
+4. Wybierz dostępny model z listy **SILNIK I MODEL** i rozpocznij rozmowę.
+
+Nie wklejaj klucza do wiadomości czatu ani nie umieszczaj go na screenshotach. Zmianę konta wykonuj po zakończeniu odpowiedzi. **Wyloguj z API** wylogowuje profil używany przez MEMOREK. Logowanie przez ChatGPT pozostaje dostępne jako drugi sposób połączenia.
+
+W trybie API panel po lewej pokazuje **szacunkowe miesięczne użycie API zarejestrowane w MEMORKU**. Kliknij panel, aby ustawić miesięczny budżet w USD. Budżet jest zapamiętywany, ale **nie blokuje kolejnych wydatków**. Szacunki opierają się na zarejestrowanych tokenach i cenniku; nie obejmują użycia klucza w innych programach i nie pokazują salda konta dostawcy.
+
+Jeżeli klucz zostanie odrzucony, sprawdź jego poprawność, uprawnienia i dokładny komunikat błędu. Samo sprawdzenie klucza nie generuje odpowiedzi modelu.
 
 ## Obrazy i załączniki
 
