@@ -2,12 +2,9 @@
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Aktualne wydanie: **0.5.102** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.102).
+Aktualne wydanie: **0.5.105** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.105).
 
-Dodano logowanie przez API przy użyciu własnego klucza API.
-Poprawiono algorytm optymalizacji zapytań.
-Uporządkowano powiązany kod i zależności. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
-Paczka klienta Windows x64 bez danych użytkownika. Dołączono sumę SHA-256.
+Dodana optymalizacja treści.
 
 [![MEMOREK 0.5.102 — okno programu](docs/screeny/memorek-0.5.102.png)](docs/screeny/memorek-0.5.102.png)
 
@@ -26,12 +23,9 @@ Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi.
 
 **Enter** dodaje nową linię. Po ponownym uruchomieniu połącz Codex; zapisane logowanie zwykle pozwala pominąć przeglądarkę.
 
-## Co nowego w 0.5.102
+## Co nowego w 0.5.105
 
-Dodano logowanie przez API przy użyciu własnego klucza API.
-Poprawiono algorytm optymalizacji zapytań.
-Uporządkowano powiązany kod i zależności. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
-Paczka klienta Windows x64 bez danych użytkownika. Dołączono sumę SHA-256.
+Dodana optymalizacja treści.
 
 ## Logowanie własnym kluczem API
 
