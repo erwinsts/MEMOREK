@@ -4,7 +4,7 @@ Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołącz
 
 Aktualne wydanie: **0.5.101** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.101). Dodano logowanie przez API przy użyciu własnego klucza API. Poprawiono algorytm optymalizacji zapytań. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
 
-[![MEMOREK 0.5.101 — okno programu](docs/screeny/memorek-0.5.101.png)](docs/screeny/memorek-0.5.101.png)
+[![MEMOREK 0.5.101 — okno programu](docs/screeny/memorek-0.5.101-new.png)](docs/screeny/memorek-0.5.101-new.png)
 
 *Aktualne okno programu w wersji 0.5.101. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
