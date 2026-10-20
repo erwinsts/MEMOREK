@@ -2,11 +2,16 @@
 
 Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
 
-Aktualne wydanie: **0.5.101** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.101). Dodano logowanie przez API przy użyciu własnego klucza API. Poprawiono algorytm optymalizacji zapytań. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
+Aktualne wydanie: **0.5.102** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.102).
 
-[![MEMOREK 0.5.101 — okno programu](docs/screeny/memorek-0.5.101-new.png)](docs/screeny/memorek-0.5.101-new.png)
+Dodano logowanie przez API przy użyciu własnego klucza API.
+Poprawiono algorytm optymalizacji zapytań.
+Uporządkowano powiązany kod i zależności. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
+Paczka klienta Windows x64 bez danych użytkownika. Dołączono sumę SHA-256.
 
-*Aktualne okno programu w wersji 0.5.101. Kliknij obraz, aby otworzyć pełny rozmiar.*
+[![MEMOREK 0.5.102 — okno programu](docs/screeny/memorek-0.5.102.png)](docs/screeny/memorek-0.5.102.png)
+
+*Aktualne okno programu w wersji 0.5.102. Kliknij obraz, aby otworzyć pełny rozmiar.*
 
 Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi. Uruchom cały rozpakowany program w folderze z prawem zapisu na Windows x64.
 
@@ -21,11 +26,12 @@ Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi.
 
 **Enter** dodaje nową linię. Po ponownym uruchomieniu połącz Codex; zapisane logowanie zwykle pozwala pominąć przeglądarkę.
 
-## Co nowego w 0.5.101
+## Co nowego w 0.5.102
 
-- Dodano logowanie przez API przy użyciu własnego klucza OpenAI API.
-- W trybie API dostępne są szacunkowe miesięczne użycie i ustawienie budżetu w USD.
-- Poprawiono algorytm optymalizacji zapytań.
+Dodano logowanie przez API przy użyciu własnego klucza API.
+Poprawiono algorytm optymalizacji zapytań.
+Uporządkowano powiązany kod i zależności. Enter dodaje nową linię, Ctrl+Enter wysyła wiadomość.
+Paczka klienta Windows x64 bez danych użytkownika. Dołączono sumę SHA-256.
 
 ## Logowanie własnym kluczem API
 
