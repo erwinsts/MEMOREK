@@ -2,13 +2,11 @@
 
 Darmowy program dla Windows autorstwa **rWin**.
 
-Aktualne wydanie: **0.6.3** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.6.3).
+Aktualne wydanie: **0.6.8** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.6.8).
 
-**Uproszczono obsługę wyszukiwania w bazie danych.** Zaktualizowano całą pomoc programu.
+**Wersja 0.6.8:** czytelny stan wysyłania wiadomości, komunikaty połączenia i logowania oraz uporządkowany kod programu.
 
-[![MEMOREK 0.6.3 — okno programu](docs/screeny/memorek-0.6.3.png)](docs/screeny/memorek-0.6.3.png)
-
-*Okno programu MEMOREK 0.6.3. Kliknij obraz, aby otworzyć pełny rozmiar.*
+[![MEMOREK 0.6.8 — okno programu](docs/screeny/memorek-0.6.8.png)](docs/screeny/memorek-0.6.8.png)
 
 ## Pierwsze połączenie
 
@@ -26,7 +24,7 @@ Ctrl+Enter — wysłanie wiadomości. Enter — nowa linia. F1 — pomoc. Ctrl+F
 
 „+ Nowa rozmowa” tworzy osobny wątek. Wybierz rozmowę na liście po lewej, aby do niej wrócić. Menu pod trzema kropkami pozwala zmienić nazwę, kategorię, oznaczenie projektu lub usunąć rozmowę.
 
-Podczas generowania odpowiedzi możesz pisać szkic kolejnego pytania. Wysłanie jest dostępne po zakończeniu odpowiedzi. Stan pracy i czas opisują obsługę zadania; nie są pomiarem wewnętrznego rozumowania modelu.
+Podczas generowania odpowiedzi możesz pisać szkic kolejnego pytania. Wysłanie jest dostępne po zakończeniu odpowiedzi. Przycisk wysyłania jest szary i nieaktywny bez połączenia lub logowania, podczas łączenia, logowania i trwającej odpowiedzi. Komunikat nad polem wiadomości podaje przyczynę. Ta sama blokada obejmuje Ctrl+Enter. Podczas odpowiedzi możesz pisać szkic kolejnej wiadomości. Stan pracy i czas opisują obsługę zadania; nie są pomiarem wewnętrznego rozumowania modelu.
 
 Najedź na wiadomość, aby zobaczyć kopiowanie i usuwanie. Przewijaj kółkiem, touchpadem lub paskiem. Przewinięcie w górę pozwala czytać starszą treść; powrót na dół przywraca śledzenie odpowiedzi.
 
@@ -160,17 +158,15 @@ Błąd zapisu bazy: skopiuj ważny tekst, zachowaj native-data i dokładny komun
 
 Zgłaszając problem, podaj numer wersji, kroki odtworzenia i treść błędu, bez kluczy API i prywatnych rozmów.
 
-## Co nowego w 0.6.3
+## Co nowego w 0.6.8
 
-Uproszczono obsługę wyszukiwania w bazie danych.
+Przycisk wysyłania jest szary i nieaktywny bez połączenia lub logowania, podczas łączenia, logowania i trwającej odpowiedzi. Komunikat nad polem wiadomości podaje przyczynę. Ta sama blokada obejmuje Ctrl+Enter. Podczas odpowiedzi możesz pisać szkic kolejnej wiadomości.
 
-Zaktualizowano całą pomoc programu i instrukcję na GitHubie: wyszukiwanie w całej bazie, zachowanie bieżącego wątku, wykres cache, koszty, załączniki, logowanie i aktualizacje.
-
-Program pobiera z lokalnej bazy potrzebne wyniki i fragmenty zamiast automatycznie dołączać podobne źródła. Przyciski kontekstu i tryby skracania 3/5 wymian zostały usunięte we wcześniejszej aktualizacji. Reset wykresu jest dostępny pod prawym przyciskiem myszy na wykresie.
+Uporządkowano kod i usunięto nieużywane mechanizmy kontekstu, zachowując obsługę starszych baz, wiadomości i załączników.
 
 ## O programie
 
-MEMOREK 0.6.3
+MEMOREK 0.6.8
 
 Darmowy program autorstwa rWin. Natywna aplikacja Windows napisana w C++/Win32, łącząca rozmowę z agentem Codex i lokalne archiwum. Nie zawiera własnego modelu językowego. Dostęp do usług AI może wymagać opłat lub własnego abonamentu.
 
