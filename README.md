@@ -1,126 +1,175 @@
 # MEMOREK — instrukcja obsługi
 
-Darmowy program dla Windows autorstwa **rWin**. Rozmawiaj z agentem AI, dołączaj obrazy i wracaj do zapisanych rozmów. Po włączeniu dostępu do systemu możesz zlecać agentowi edycję plików, kodowanie, kompilację i instalacje.
+Darmowy program dla Windows autorstwa **rWin**.
 
-Aktualne wydanie: **0.5.105** — [pobierz program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.5.105).
+Aktualne wydanie: **0.6.3** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.6.3).
 
-Dodana optymalizacja treści.
+**Uproszczono obsługę wyszukiwania w bazie danych.** Zaktualizowano całą pomoc programu.
 
-[![MEMOREK 0.5.102 — okno programu](docs/screeny/memorek-0.5.102.png)](docs/screeny/memorek-0.5.102.png)
+## Pierwsze połączenie
 
-*Aktualne okno programu w wersji 0.5.102. Kliknij obraz, aby otworzyć pełny rozmiar.*
+Rozpakuj cały folder MEMOREK i uruchom MEMOREK.exe. Nie uruchamiaj programu bezpośrednio z ZIP-a.
 
-Do rozmowy z AI potrzebujesz internetu i własnego konta z dostępem do usługi. Uruchom cały rozpakowany program w folderze z prawem zapisu na Windows x64.
+Kliknij „Połącz Codex” i poczekaj na połączenie. Zaloguj się przez ChatGPT w przeglądarce albo wpisz własny klucz API w polu na górze i kliknij „OK”. Nie wpisuj klucza do rozmowy.
 
-## Pierwsze uruchomienie
+Wybierz dostępny model z listy „SILNIK I MODEL”. Wpisz wiadomość i wyślij przyciskiem ▶ lub Ctrl+Enter. Enter dodaje nową linię.
 
-1. Kliknij pobrany ZIP prawym przyciskiem i wybierz **Wyodrębnij wszystkie**.
-2. Otwórz rozpakowany folder **MEMOREK** i uruchom **MEMOREK.exe**. Zostaw obok wszystkie dołączone pliki i foldery.
-3. Kliknij **Połącz Codex** na górze okna.
-4. Kliknij **Zaloguj przez ChatGPT**, dokończ logowanie w przeglądarce i wróć do programu. Możesz też zalogować się przez API, wpisując własny klucz API i zatwierdzając go przyciskiem **OK**.
-5. Wybierz model z listy **SILNIK I MODEL** po lewej.
-6. Wpisz wiadomość na dole. Wyślij ją fioletową strzałką lub skrótem **Ctrl+Enter**.
+Przy kolejnym uruchomieniu ponownie połącz Codex. Zapisany profil zwykle pozwala pominąć logowanie. Rozmowa z modelem wymaga internetu i własnego dostępu do usługi.
 
-**Enter** dodaje nową linię. Po ponownym uruchomieniu połącz Codex; zapisane logowanie zwykle pozwala pominąć przeglądarkę.
+## Rozmowa i skróty
 
-## Co nowego w 0.5.105
+Ctrl+Enter — wysłanie wiadomości. Enter — nowa linia. F1 — pomoc. Ctrl+F w polu wiadomości — wyszukiwanie w pamięci.
 
-Dodana optymalizacja treści.
+„+ Nowa rozmowa” tworzy osobny wątek. Wybierz rozmowę na liście po lewej, aby do niej wrócić. Menu pod trzema kropkami pozwala zmienić nazwę, kategorię, oznaczenie projektu lub usunąć rozmowę.
 
-## Logowanie własnym kluczem API
+Podczas generowania odpowiedzi możesz pisać szkic kolejnego pytania. Wysłanie jest dostępne po zakończeniu odpowiedzi. Stan pracy i czas opisują obsługę zadania; nie są pomiarem wewnętrznego rozumowania modelu.
 
-1. Kliknij **Połącz Codex** i poczekaj na połączenie.
-2. Wklej własny klucz w pole **Wklej klucz OpenAI API** na górze okna i kliknij **OK**.
-3. Poczekaj na sprawdzenie klucza i komunikat **Zalogowano przez API**.
-4. Wybierz dostępny model z listy **SILNIK I MODEL** i rozpocznij rozmowę.
+Najedź na wiadomość, aby zobaczyć kopiowanie i usuwanie. Przewijaj kółkiem, touchpadem lub paskiem. Przewinięcie w górę pozwala czytać starszą treść; powrót na dół przywraca śledzenie odpowiedzi.
 
-Nie wklejaj klucza do wiadomości czatu ani nie umieszczaj go na screenshotach. Zmianę konta wykonuj po zakończeniu odpowiedzi. **Wyloguj z API** wylogowuje profil używany przez MEMOREK. Logowanie przez ChatGPT pozostaje dostępne jako drugi sposób połączenia.
+## Obrazy i pliki
 
-W trybie API panel po lewej pokazuje **szacunkowe miesięczne użycie API zarejestrowane w MEMORKU**. Kliknij panel, aby ustawić miesięczny budżet w USD. Budżet jest zapamiętywany, ale **nie blokuje kolejnych wydatków**. Szacunki opierają się na zarejestrowanych tokenach i cenniku; nie obejmują użycia klucza w innych programach i nie pokazują salda konta dostawcy.
+Spinacz obok pola wiadomości dodaje obrazy PNG, JPG/JPEG i WEBP. Limit wynosi 4 obrazy na wiadomość, do 20 MB każdy. W oknie wyboru użyj Ctrl lub Shift, aby zaznaczyć kilka obrazów naraz. Możesz też dodawać je partiami.
 
-Jeżeli klucz zostanie odrzucony, sprawdź jego poprawność, uprawnienia i dokładny komunikat błędu. Samo sprawdzenie klucza nie generuje odpowiedzi modelu.
+Dopisz pytanie i wyślij. Gdy wysyłasz same obrazy, program dodaje prośbę o ich analizę. Po wysłaniu nazwy załączników są widoczne pod wiadomością; kliknięcie otwiera lokalny plik. Program zachowuje kopie obrazów w native-data/attachments.
 
-## Obrazy i załączniki
+Spinacz nie służy do dołączania dowolnych PDF-ów, ZIP-ów i innych dokumentów. Pliki robocze udostępniaj agentowi przez folder workspace i podanie ścieżki. Możliwość ich odczytu lub zmiany zależy od uprawnień i narzędzi. Kafelki „Otwórz folder” przy rozpoznanych ścieżkach pozwalają przejść do plików.
 
-1. Kliknij przycisk z **czarnym spinaczem** obok pola wiadomości.
-2. Zaznacz obrazy. Przytrzymaj **Ctrl**, aby wybrać kilka pojedynczych plików, albo **Shift**, aby zaznaczyć zakres.
-3. Kliknij **Otwórz**. Liczba na przycisku spinacza oraz komunikat na dole potwierdzają dodanie plików.
-4. Dopisz pytanie i wyślij. Możesz też wysłać same obrazy — program doda prośbę o ich analizę.
+## Wyszukiwanie w bazie
 
-Limit to **4 obrazy łącznie na wiadomość**, do **20 MB każdy**. Obsługiwane formaty: **PNG, JPG/JPEG i WEBP**. Możesz zaznaczyć obrazy naraz albo dodawać partiami. Jeśli przekroczysz limit, ostatnio wybrana partia nie zostanie dodana.
+Uproszczono obsługę wyszukiwania w bazie danych.
 
-Po wysłaniu pod Twoją wiadomością pojawią się **pogrubione nazwy plików**. Kliknij nazwę, aby otworzyć obraz. MEMOREK zachowuje lokalną kopię załącznika. Spinacz nie obsługuje obecnie ZIP-ów, PDF-ów ani dowolnych innych plików.
+Kliknij „Pamięć (Ctrl+F)”, wpisz nazwę, słowa lub ustalenie i naciśnij Enter albo „Szukaj”. Wybierz wynik, aby przeczytać pełną wiadomość z autorem i datą. Przyciski „Poprzednia” i „Następna” przełączają strony wyników. Wyszukiwanie i podgląd działają lokalnie, również bez internetu.
 
-## Rozmowy i pamięć
+W rozmowie możesz poprosić agenta o odnalezienie wcześniejszych ustaleń. Agent ma narzędzia przeszukujące całą lokalną bazę oraz odczytujące wskazane wiadomości i sąsiednie źródła. Do usługi trafiają tylko zwrócone wyniki i potrzebne fragmenty. Program nie wysyła automatycznie całej bazy ani nie dokleja podobnych źródeł do każdego pytania.
 
-**+ Nowa rozmowa** tworzy osobny wątek. Wybieraj rozmowy na liście po lewej. Menu pod trzema kropkami pozwala zmienić nazwę, kategorię, oznaczyć projekt lub usunąć rozmowę.
+Usunięto przyciski „Kontekst”, „Pracuj na tym kontekście”, pracę tylko na temacie oraz tryby 3/5 wymian. Dawne ograniczenia są wyłączane przy odczycie archiwum; wiadomości pozostają zachowane.
 
-Rozmowy zapisują się lokalnie i pozostają po zamknięciu programu. **Szukaj w pamięci** otwiera archiwum: wpisz słowa, kliknij **Szukaj** i wybierz wynik. Samo przeglądanie zapisanej pamięci działa bez internetu. Możesz też poprosić agenta o odnalezienie wcześniejszego ustalenia.
+Źródła z bazy mogą zawierać stare propozycje i nieaktualne ustalenia. Sprawdzaj autora, datę i pełny zapis, gdy szczegół ma znaczenie.
 
-**Ctrl+F** w polu wiadomości otwiera wyszukiwanie pamięci. **F1** otwiera pomoc w programie.
+## Historia rozmowy
 
-## Kodowanie i dostęp do komputera
+Bieżąca rozmowa korzysta z zachowanego wątku modelu. Program nie resetuje go po 5 pytaniach ani po 16000 tokenów i nie narzuca celu 20000 tokenów wejścia. Granicę kontekstu i ewentualne kompaktowanie obsługuje backend modelu.
 
-Przed wysłaniem zadania wymagającego zmian zaznacz **Dostęp do systemu i instalacji** i przeczytaj komunikat potwierdzenia. Agent może wtedy edytować pliki, uruchamiać polecenia, kompilować kod i wykonywać instalacje, zależnie od dostępnych narzędzi i uprawnień konta Windows.
+Nowa rozmowa tworzy oddzielny wątek, ale lokalne archiwum wszystkich rozmów pozostaje dostępne do wyszukiwania. Jeżeli stary wątek nie jest dostępny lub po migracji powstał nowy, agent może odszukać wcześniejsze ustalenia narzędziami pamięci. Program nie odtwarza go przez automatyczne wysyłanie całej bazy.
 
-Bez tej opcji działa w trybie tylko do odczytu. Podaj folder i konkretny cel, np. „Sprawdź projekt w tym katalogu i napraw błąd kompilacji”. Dostęp trzeba ponownie włączyć po uruchomieniu programu.
+Zachowanie wątku sprzyja ponownemu wykorzystaniu cache, ale nie gwarantuje konkretnego procentu ani pamiętania każdego szczegółu. Ważne ustalenia można zweryfikować w lokalnym archiwum.
 
-## Limity konta i licznik dolarów
+## Tokeny i wykres cache
 
-Panel po lewej pokazuje pozostały limit konta oraz termin odnowienia, jeśli usługa udostępnia dane. **„Limit nieudostępniony”** oznacza brak danych.
+Wykres CACHE po lewej pokazuje do 24 ostatnich pomiarów wybranej rozmowy, od najstarszego do najnowszego. Punkt opisuje ostatnie wywołanie modelu w danej turze. Jedna odpowiedź może wymagać kilku wywołań, np. przy używaniu narzędzi.
 
-Licznik **$ na górze** pokazuje szacunkową wartość według stawek API. Nie jest rachunkiem za abonament ani dokładną kwotą pobraną z konta. Kliknij licznik, aby zmienić okres lub wybrać **Wyzeruj licznik dolarów**.
+IN oznacza tokeny wejściowe, OUT — wyjściowe, CACHE — część wejścia ponownie wykorzystaną przez dostawcę. Cache jest częścią IN, więc nie dodawaj tych dwóch liczników. Pod wykresem są wartości ostatniego wywołania, a nie suma całej odpowiedzi. Najedź myszą, aby zobaczyć szczegóły.
 
-## Czytanie i kopiowanie wiadomości
+Wysoki cache nie oznacza gotowej odpowiedzi z pamięci ani takiego samego procentu oszczędności limitu konta. Cache zależy od treści, modelu i dostawcy; 99,9% nie jest gwarantowane. Program nie wysyła dodatkowych pytań, aby go podtrzymywać.
 
-Przewijaj rozmowę kółkiem myszy lub paskiem po prawej. Podczas pisania odpowiedzi możesz wrócić do wcześniejszych wiadomości. Przewiń na sam dół, aby śledzić dalszy ciąg odpowiedzi.
+Kliknij wykres prawym przyciskiem myszy i wybierz „Resetuj wykres — licz od teraz”, aby ukryć wcześniejsze punkty. To nie usuwa historii pomiarów ani nie zeruje licznika dolarów. W trybie API kliknięcie lewym przyciskiem przełącza widok cache i kosztu.
 
-Najedź na wiadomość, aby pokazać przyciski kopiowania i usuwania. Usuwanie jest dostępne po zakończeniu odpowiedzi.
+## Szacunkowe koszty
 
-## Jak zlecać zadania
+Licznik dolarów na górze pokazuje szacunek według cennika API dla zarejestrowanych wywołań. Kliknij go, aby wybrać godzinę, dzień, tydzień lub miesiąc oraz zobaczyć sumę tokenów. Zliczane są wszystkie zarejestrowane wywołania ze wszystkich rozmów, także pośrednie wywołania narzędzi.
 
-Napisz, jaki efekt chcesz uzyskać, i podaj potrzebne szczegóły. Przykłady:
+Nie jest to faktura, saldo konta ani koszt abonamentu ChatGPT. W trybie ChatGPT jest to przeliczenie tokenów według stawek API, a nie informacja o dodatkowej opłacie. Gwiazdka oznacza nieznaną stawkę lub niepełną historię; suma może być częściowa.
 
-- „Wyjaśnij prostymi słowami błąd widoczny na załączonym obrazie”.
-- „Znajdź w pamięci nasze ustalenia dotyczące strony firmowej”.
-- „W folderze C:\Projekty\MojaStrona popraw menu na telefonach”.
+„Wyzeruj licznik dolarów” rozpoczyna nowe podsumowanie od tej chwili. Nie usuwa zapisanych pomiarów, nie zmienia wykresu i nie zeruje rachunku u dostawcy.
 
-Do pracy z plikami podaj dokładny folder. Przy plikach wskazanych w odpowiedzi mogą pojawić się kafelki **Otwórz folder**. Oznaczenie rozmowy jako projektu służy organizacji; rozmowy korzystają ze wspólnego folderu **workspace**.
+Budżet miesięczny w panelu API jest oddzielną funkcją. Nie stanowi blokady wydatków.
 
-## Konto i połączenie
+## Logowanie API i budżet
 
-**Rozłącz** kończy połączenie z Codexem. Aby wrócić do pracy, kliknij **Połącz Codex**. **Wyloguj z Codexa** wylogowuje konto używane przez MEMORKA.
+Połącz Codex, wpisz własny klucz API w polu na górnym pasku i kliknij „OK”. Poczekaj na wynik sprawdzenia. Nie umieszczaj klucza w wiadomościach, repozytorium ani na zrzutach ekranu. Logowanie przez ChatGPT jest alternatywną metodą.
 
-Listę modeli program pobiera po połączeniu. Wybieraj model z listy **SILNIK I MODEL**.
+W trybie API panel po lewej pokazuje szacunkowe miesięczne użycie zarejestrowane w MEMORKU. Kliknij panel, aby ustawić budżet w USD. Ustawiony budżet nie blokuje kolejnych wydatków.
 
-Panel **CACHE** dotyczy wykorzystania pamięci podręcznej wejścia modelu. Nie pokazuje zajętości dysku ani zapełnienia archiwum rozmów.
+Szacunek nie obejmuje użycia klucza w innych programach i nie przedstawia salda konta. Korzysta z pomiarów tokenów oraz dostępnego cennika. Zmieniaj konto po zakończeniu odpowiedzi. „Wyloguj z API” wylogowuje profil MEMORKA.
 
-## Własne dane
+Odrzucony klucz: sprawdź dokładny komunikat, poprawność i uprawnienia klucza. Samo sprawdzenie logowania nie generuje odpowiedzi modelu.
 
-Folder **native-data** zawiera rozmowy, załączniki, ustawienia i profil logowania. **workspace** zawiera pliki robocze. Zamknij program przed wykonaniem kopii tych folderów. Nie publikuj własnego folderu danych.
+## Konto i limity ChatGPT
 
-Główna baza rozmów jest szyfrowana przez Windows DPAPI, powiązane z kontem Windows. Przeniesienie jej na inne konto lub komputer może uniemożliwić odczyt. Załączniki i profil Codexa pozostają poza tym szyfrowaniem bazy.
+Po połączeniu i zalogowaniu przez ChatGPT panel po lewej pokazuje pozostały limit 5-godzinny i tygodniowy oraz termin odnowienia, jeżeli usługa udostępnia takie dane.
 
-Wiadomości i obrazy używane w rozmowie są przekazywane do usługi AI.
+„58% zostało” oznacza pozostały limit. „Limit nieudostępniony” oznacza brak danych, a nie zero. Program pobiera je po połączeniu i odświeża co minutę; sprawdzenie nie wysyła pytania do modelu.
+
+Procent cache oraz licznik dolarów nie pokazują pozostałego limitu konta. Profil logowania MEMORKA jest osobny od sesji otwartej w przeglądarce. Lista dostępnych modeli zależy od konta i odpowiedzi backendu.
+
+## Dostęp do systemu
+
+Domyślnie agent pracuje tylko do odczytu. Aby umożliwić edycję plików, uruchamianie programów lub instalacje, zaznacz „Dostęp do systemu i instalacji” i przeczytaj komunikat potwierdzenia przed wysłaniem zadania.
+
+Agent pracuje na rzeczywistych plikach Windows z uprawnieniami Twojego konta. Nie każda operacja wymaga dodatkowego pytania. Instalator może osobno poprosić o zgodę Windows. Program nie jest maszyną wirtualną.
+
+Ustawienie zmieniaj po zakończeniu odpowiedzi. Po ponownym uruchomieniu dostęp trzeba włączyć ponownie. Wszystkie rozmowy korzystają ze wspólnego folderu workspace; oznaczenie projektu nie tworzy osobnej piaskownicy.
+
+Treść wiadomości, wysłane obrazy oraz dane odczytane przez narzędzia mogą trafić do usługi modelu podczas obsługi zadania.
+
+## Aktualizacje
+
+Program sprawdza publiczne wydania w repozytorium erwinsts/MEMOREK na GitHubie przy uruchomieniu i co godzinę. Sprawdzanie nie wymaga konta GitHub.
+
+Po wykryciu nowszej kompletnej paczki pojawia się przycisk „Aktualizuj” z numerem wersji. Pobieranie i instalacja zaczynają się po kliknięciu. Lokalne pakiety przygotowane przez kompilację są również obsługiwane.
+
+Aktualizator sprawdza sumę SHA-256 i spis plików, czeka na zakończenie odpowiedzi i zapis rozmowy, zachowuje poprzednie pliki, podmienia program i uruchamia go ponownie. Błąd instalacji powoduje próbę przywrócenia poprzednich plików.
+
+Rozmowy, workspace i profil logowania pozostają na miejscu. Okno zmian zamknij krzyżykiem albo zaznacz opcję automatycznego zamknięcia po aktualizacji. Brak internetu lub nowego wydania nie blokuje programu.
+
+Przy ręcznej aktualizacji zamknij program, zachowaj kopię native-data i workspace, a następnie podmień pliki programu z nowej pełnej paczki.
+
+## Połączenie i rozłączanie
+
+„Połącz Codex” uruchamia lokalny backend dostarczony z programem. „Rozłącz” zamyka połączenie po zakończeniu bieżącej operacji. Możesz potem połączyć się ponownie.
+
+Lokalny proces i profil logowania nie są lokalnym modelem językowym. Generowanie odpowiedzi wymaga połączenia z usługą. Program nie wysyła podtrzymujących pytań do modelu i nie gwarantuje utrzymania cache.
+
+Jeżeli połączenie utknie, zachowaj ważny tekst, zaczekaj na zakończenie bieżącej pracy i uruchom program ponownie. Nie usuwaj profilu logowania ani bazy w ramach zwykłego restartu.
+
+## Cennik modeli
+
+Szacunki kosztów korzystają z lokalnego cennika oraz pomiarów tokenów. Stawki dla zwykłego wejścia, wejścia z cache i wyjścia są rozliczane oddzielnie. Dla części modeli długi kontekst może mieć inną stawkę.
+
+Nieznana nazwa modelu lub brak stawki oznacza brak pełnego szacunku, a nie bezpłatną pracę. Program nie wylicza kosztu z samej liczby znaków.
+
+Do odświeżenia lokalnych stawek służy dołączony skrypt refresh_pricing.ps1. Nie wpisuj stawek na podstawie przypuszczeń. Ostateczne rozliczenie sprawdzaj u dostawcy; lokalne dane nie są fakturą.
+
+## Instalacja i prywatne dane
+
+Wymagania: Windows 10/11 x64, Windows PowerShell 5.1, folder z prawem zapisu, internet i własny dostęp do usługi AI. Kompilator, Python i Node.js nie są wymagane do zwykłego uruchamiania. Zadania agenta mogą wymagać dodatkowych narzędzi.
+
+Zachowaj cały folder programu wraz z tools/codex. Nie uruchamiaj kilku kopii na tej samej bazie. Native-data zawiera rozmowy, załączniki, ustawienia i profil logowania; workspace zawiera pliki robocze. Nie publikuj tych folderów.
+
+Główna baza rozmów, jej kopie oraz indeks tytułów i kategorii są szyfrowane przez Windows DPAPI związane z kontem Windows. Wyszukiwanie działa na odszyfrowanych danych w RAM. Profil i sesje Codexa, załączniki oraz pomiary zużycia pozostają poza tym szyfrowaniem bazy.
+
+Przeniesienie zaszyfrowanej bazy na inne konto Windows lub komputer może uniemożliwić odczyt. Brak przenośnego eksportu. Przed ręcznym przenoszeniem lub aktualizacją zachowaj kopię native-data i workspace. Usunięcie rozmowy lokalnie nie usuwa automatycznie danych po stronie dostawcy ani starszych kopii.
 
 ## Gdy coś nie działa
 
-| Problem | Co zrobić |
-| --- | --- |
-| Nie można rozpocząć rozmowy | Sprawdź internet, kliknij **Połącz Codex** i dokończ logowanie, jeśli jest wymagane. |
-| Brak modeli na liście | Najpierw połącz Codex i sprawdź zalogowane konto. |
-| Enter nie wysyła wiadomości | Użyj **Ctrl+Enter** albo fioletowej strzałki. |
-| AI nie może zmienić pliku | Przed wysłaniem zadania włącz **Dostęp do systemu i instalacji** i podaj dokładną ścieżkę. |
-| Nie można dodać obrazu | Sprawdź format, rozmiar do 20 MB i limit 4 obrazów. |
-| Nie znajduję wiadomości | W **Szukaj w pamięci** spróbuj krótszego hasła lub innego słowa. |
+Nie można wysłać wiadomości: połącz Codex, sprawdź logowanie, wpisz tekst lub dodaj obraz i poczekaj na zakończenie poprzedniej odpowiedzi.
 
-## Skróty
+Pusta lista modeli lub błąd logowania: sprawdź internet, metodę logowania i dokładny komunikat. Konto w przeglądarce nie zastępuje profilu MEMORKA.
 
-| Skrót | Działanie |
-| --- | --- |
-| **Ctrl+Enter** | Wyślij wiadomość |
-| **Enter** | Dodaj nową linię |
-| **Ctrl+F** w polu wiadomości | Otwórz wyszukiwanie pamięci |
-| **F1** | Otwórz pomoc |
+Brak wyników wyszukiwania: spróbuj innej nazwy lub krótszego zestawu słów. Sam lokalny podgląd nie wymaga modelu. Starszych ustaleń można też szukać przez agenta.
 
-Autor: **rWin**. MEMOREK jest darmowy; korzystanie z usług AI może wymagać opłat u dostawcy. AI może się mylić — sprawdzaj odpowiedzi i wykonywane zmiany.
+Agent nie może zmienić pliku: sprawdź dostęp do systemu i prawa do folderu. Ustawienia dostępu zmieniaj po zakończeniu odpowiedzi.
+
+Brak limitu lub kosztu: konto może nie udostępniać danych, a cennik może nie zawierać modelu. Brak danych nie oznacza zera.
+
+Błąd zapisu bazy: skopiuj ważny tekst, zachowaj native-data i dokładny komunikat. Nie usuwaj archiwum. Błąd aktualizacji: zachowaj poprzednie pliki i komunikaty aktualizatora.
+
+Zgłaszając problem, podaj numer wersji, kroki odtworzenia i treść błędu, bez kluczy API i prywatnych rozmów.
+
+## Co nowego w 0.6.3
+
+Uproszczono obsługę wyszukiwania w bazie danych.
+
+Zaktualizowano całą pomoc programu i instrukcję na GitHubie: wyszukiwanie w całej bazie, zachowanie bieżącego wątku, wykres cache, koszty, załączniki, logowanie i aktualizacje.
+
+Program pobiera z lokalnej bazy potrzebne wyniki i fragmenty zamiast automatycznie dołączać podobne źródła. Przyciski kontekstu i tryby skracania 3/5 wymian zostały usunięte we wcześniejszej aktualizacji. Reset wykresu jest dostępny pod prawym przyciskiem myszy na wykresie.
+
+## O programie
+
+MEMOREK 0.6.3
+
+Darmowy program autorstwa rWin. Natywna aplikacja Windows napisana w C++/Win32, łącząca rozmowę z agentem Codex i lokalne archiwum. Nie zawiera własnego modelu językowego. Dostęp do usług AI może wymagać opłat lub własnego abonamentu.
+
+Autor projektu nie ponosi odpowiedzialności za używanie programu. Wszystko robisz na własną odpowiedzialność. AI może popełniać błędy. Sprawdzaj istotne odpowiedzi i działania wykonywane na plikach.
+
+Licencje składników zewnętrznych są dołączone w folderze licenses. Repozytorium i aktualizacje: https://github.com/erwinsts/MEMOREK.
