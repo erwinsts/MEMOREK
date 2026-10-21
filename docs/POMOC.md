@@ -6,6 +6,10 @@ Aktualne wydanie: **0.6.3** — [pobierz pełny program](https://github.com/erwi
 
 **Uproszczono obsługę wyszukiwania w bazie danych.** Zaktualizowano całą pomoc programu.
 
+[![MEMOREK 0.6.3 — okno programu](screeny/memorek-0.6.3.png)](screeny/memorek-0.6.3.png)
+
+*Okno programu MEMOREK 0.6.3. Kliknij obraz, aby otworzyć pełny rozmiar.*
+
 ## Pierwsze połączenie
 
 Rozpakuj cały folder MEMOREK i uruchom MEMOREK.exe. Nie uruchamiaj programu bezpośrednio z ZIP-a.
