@@ -2,11 +2,11 @@
 
 Darmowy program dla Windows autorstwa **rWin**.
 
-Aktualne wydanie: **0.6.8** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.6.8).
+Aktualne wydanie: **0.7.5** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.7.5).
 
-**Wersja 0.6.8:** czytelny stan wysyłania wiadomości, komunikaty połączenia i logowania oraz uporządkowany kod programu.
+**Co nowego:** Został dodany pasek zużycia w wersji darmowej i blokada programu podczas pracy agenta.
 
-[![MEMOREK 0.6.8 — okno programu](docs/screeny/memorek-0.6.8.png)](docs/screeny/memorek-0.6.8.png)
+[![MEMOREK 0.7.5 — okno programu](docs/screeny/memorek-0.7.5.png)](docs/screeny/memorek-0.7.5.png)
 
 ## Pierwsze połączenie
 
@@ -27,6 +27,8 @@ Ctrl+Enter — wysłanie wiadomości. Enter — nowa linia. F1 — pomoc. Ctrl+F
 Podczas generowania odpowiedzi możesz pisać szkic kolejnego pytania. Wysłanie jest dostępne po zakończeniu odpowiedzi. Przycisk wysyłania jest szary i nieaktywny bez połączenia lub logowania, podczas łączenia, logowania i trwającej odpowiedzi. Komunikat nad polem wiadomości podaje przyczynę. Ta sama blokada obejmuje Ctrl+Enter. Podczas odpowiedzi możesz pisać szkic kolejnej wiadomości. Stan pracy i czas opisują obsługę zadania; nie są pomiarem wewnętrznego rozumowania modelu.
 
 Najedź na wiadomość, aby zobaczyć kopiowanie i usuwanie. Przewijaj kółkiem, touchpadem lub paskiem. Przewinięcie w górę pozwala czytać starszą treść; powrót na dół przywraca śledzenie odpowiedzi.
+
+Podczas pracy agenta zamknięcie programu przyciskiem X, opcją Zamknij lub skrótem Alt+F4 jest zablokowane. Po zakończeniu zadania zamykanie jest ponownie dostępne.
 
 ## Obrazy i pliki
 
@@ -88,7 +90,7 @@ Odrzucony klucz: sprawdź dokładny komunikat, poprawność i uprawnienia klucza
 
 ## Konto i limity ChatGPT
 
-Po połączeniu i zalogowaniu przez ChatGPT panel po lewej pokazuje pozostały limit 5-godzinny i tygodniowy oraz termin odnowienia, jeżeli usługa udostępnia takie dane.
+Po połączeniu i zalogowaniu przez ChatGPT panel po lewej pokazuje w planie Free miesięczny pasek zużycia, procent pozostałego limitu i termin odnowienia, jeżeli konto udostępnia te dane. W Plus pozostają paski 5-godzinny i tygodniowy.
 
 „58% zostało” oznacza pozostały limit. „Limit nieudostępniony” oznacza brak danych, a nie zero. Program pobiera je po połączeniu i odświeża co minutę; sprawdzenie nie wysyła pytania do modelu.
 
@@ -158,15 +160,13 @@ Błąd zapisu bazy: skopiuj ważny tekst, zachowaj native-data i dokładny komun
 
 Zgłaszając problem, podaj numer wersji, kroki odtworzenia i treść błędu, bez kluczy API i prywatnych rozmów.
 
-## Co nowego w 0.6.8
+## Co nowego w 0.7.5
 
-Przycisk wysyłania jest szary i nieaktywny bez połączenia lub logowania, podczas łączenia, logowania i trwającej odpowiedzi. Komunikat nad polem wiadomości podaje przyczynę. Ta sama blokada obejmuje Ctrl+Enter. Podczas odpowiedzi możesz pisać szkic kolejnej wiadomości.
-
-Uporządkowano kod i usunięto nieużywane mechanizmy kontekstu, zachowując obsługę starszych baz, wiadomości i załączników.
+Został dodany pasek zużycia w wersji darmowej i blokada programu podczas pracy agenta.
 
 ## O programie
 
-MEMOREK 0.6.8
+MEMOREK 0.7.5
 
 Darmowy program autorstwa rWin. Natywna aplikacja Windows napisana w C++/Win32, łącząca rozmowę z agentem Codex i lokalne archiwum. Nie zawiera własnego modelu językowego. Dostęp do usług AI może wymagać opłat lub własnego abonamentu.
 
