@@ -4,7 +4,7 @@ Darmowy program dla Windows autorstwa **rWin**.
 
 Aktualne wydanie: **0.7.5** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.7.5).
 
-**Co nowego:** Został dodany pasek zużycia w wersji darmowej planu i blokada programu podczas pracy agenta.
+**Co nowego:** Został dodany pasek zużycia w wersji darmowej i blokada programu podczas pracy agenta.
 
 [![MEMOREK 0.7.5 — okno programu](docs/screeny/memorek-0.7.5.png)](docs/screeny/memorek-0.7.5.png)
 
