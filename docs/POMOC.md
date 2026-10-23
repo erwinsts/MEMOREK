@@ -2,11 +2,17 @@
 
 Darmowy program dla Windows autorstwa **rWin**.
 
-Aktualne wydanie: **0.7.5** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.7.5).
+Aktualne wydanie: **0.8.2** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.8.2).
 
-**Co nowego:** Został dodany pasek zużycia w wersji darmowej i blokada programu podczas pracy agenta.
+**Co nowego:** Automatyczne przywracanie rozmów i cofanie przywrócenia, szyfrowana baza na dysku oraz bieżąca kopia i siedem kopii dziennych.
 
-[![MEMOREK 0.7.5 — okno programu](screeny/memorek-0.7.5.png)](screeny/memorek-0.7.5.png)
+[![MEMOREK 0.8.2 — okno programu](screeny/memorek-0.8.2.png)](screeny/memorek-0.8.2.png)
+
+## Okno programu
+
+Na górze znajdują się „Połącz Codex”, „Zaloguj przez ChatGPT” i pole klucza OpenAI API z przyciskiem „OK”. Model wybierasz po lewej w sekcji „SILNIK I MODEL”. Ikona książki w prawym górnym rogu otwiera pomoc; działa też F1.
+
+Lewa kolumna zawiera „+ Nowa rozmowa”, ustawienie dostępu do systemu, panel konta, wykres CACHE oraz listę rozmów. Na dole są „Pamięć (Ctrl+F)” i „Przywróć kopię”. Wiadomość wpisujesz na dole głównego obszaru; obok znajdują się spinacz i przycisk wysyłania ▶.
 
 ## Pierwsze połączenie
 
@@ -24,7 +30,7 @@ Ctrl+Enter — wysłanie wiadomości. Enter — nowa linia. F1 — pomoc. Ctrl+F
 
 „+ Nowa rozmowa” tworzy osobny wątek. Wybierz rozmowę na liście po lewej, aby do niej wrócić. Menu pod trzema kropkami pozwala zmienić nazwę, kategorię, oznaczenie projektu lub usunąć rozmowę.
 
-Podczas generowania odpowiedzi możesz pisać szkic kolejnego pytania. Wysłanie jest dostępne po zakończeniu odpowiedzi. Przycisk wysyłania jest szary i nieaktywny bez połączenia lub logowania, podczas łączenia, logowania i trwającej odpowiedzi. Komunikat nad polem wiadomości podaje przyczynę. Ta sama blokada obejmuje Ctrl+Enter. Podczas odpowiedzi możesz pisać szkic kolejnej wiadomości. Stan pracy i czas opisują obsługę zadania; nie są pomiarem wewnętrznego rozumowania modelu.
+Podczas generowania odpowiedzi możesz pisać szkic kolejnego pytania. Wysłanie jest dostępne po zakończeniu odpowiedzi. Przycisk wysyłania jest szary i nieaktywny bez połączenia lub logowania, podczas łączenia, logowania i trwającej odpowiedzi. Komunikat nad polem wiadomości podaje przyczynę. Ta sama blokada obejmuje Ctrl+Enter. Stan pracy i czas opisują obsługę zadania; nie są pomiarem wewnętrznego rozumowania modelu.
 
 Najedź na wiadomość, aby zobaczyć kopiowanie i usuwanie. Przewijaj kółkiem, touchpadem lub paskiem. Przewinięcie w górę pozwala czytać starszą treść; powrót na dół przywraca śledzenie odpowiedzi.
 
@@ -42,7 +48,7 @@ Spinacz nie służy do dołączania dowolnych PDF-ów, ZIP-ów i innych dokument
 
 Uproszczono obsługę wyszukiwania w bazie danych.
 
-Kliknij „Pamięć (Ctrl+F)”, wpisz nazwę, słowa lub ustalenie i naciśnij Enter albo „Szukaj”. Wybierz wynik, aby przeczytać pełną wiadomość z autorem i datą. Przyciski „Poprzednia” i „Następna” przełączają strony wyników. Wyszukiwanie i podgląd działają lokalnie, również bez internetu.
+Kliknij „Pamięć (Ctrl+F)”, wpisz nazwę, słowa lub ustalenie i naciśnij Enter albo „Szukaj”. Wybierz wynik, aby czytać wiadomość z autorem i datą. Dłuższy tekst przeglądaj przyciskami „← Fragment” i „Fragment →”. Przyciski „Poprzednia” i „Następna” przełączają strony wyników. Wyszukiwanie i podgląd działają lokalnie, również bez internetu.
 
 W rozmowie możesz poprosić agenta o odnalezienie wcześniejszych ustaleń. Agent ma narzędzia przeszukujące całą lokalną bazę oraz odczytujące wskazane wiadomości i sąsiednie źródła. Do usługi trafiają tylko zwrócone wyniki i potrzebne fragmenty. Program nie wysyła automatycznie całej bazy ani nie dokleja podobnych źródeł do każdego pytania.
 
@@ -57,6 +63,30 @@ Bieżąca rozmowa korzysta z zachowanego wątku modelu. Program nie resetuje go 
 Nowa rozmowa tworzy oddzielny wątek, ale lokalne archiwum wszystkich rozmów pozostaje dostępne do wyszukiwania. Jeżeli stary wątek nie jest dostępny lub po migracji powstał nowy, agent może odszukać wcześniejsze ustalenia narzędziami pamięci. Program nie odtwarza go przez automatyczne wysyłanie całej bazy.
 
 Zachowanie wątku sprzyja ponownemu wykorzystaniu cache, ale nie gwarantuje konkretnego procentu ani pamiętania każdego szczegółu. Ważne ustalenia można zweryfikować w lokalnym archiwum.
+
+## Historia na dysku i kopie automatyczne
+
+Rozmowy i indeks wyszukiwania są przechowywane w szyfrowanej bazie `native-data/archive.db`. Program wczytuje zapisane wiadomości stronami zamiast trzymać całą historię w pamięci RAM. Długie wiadomości mogą mieć skrócony podgląd; kopiowanie odczytuje pełny tekst, a w oknie „Pamięć” można przechodzić między fragmentami.
+
+Po aktualizacji ze starszej wersji dotychczasowa historia jest automatycznie przenoszona do nowej bazy. Stary plik zostaje zachowany pod nazwą `conversations.json.before-database-...`. Przeniesienie dużej historii może potrwać i wymaga miejsca na starą oraz nową bazę.
+
+Po zakończeniu odpowiedzi agenta program odświeża bieżącą kopię całej bazy. Dodatkowo zachowuje do siedmiu kopii dziennych — po jednej na dzień używania programu. Kopia dzienna powstaje po pierwszym zapisie danego dnia i nie jest nadpisywana kolejnymi odpowiedziami. Po utworzeniu ósmej usuwana jest najstarsza kopia dzienna. Kopie trafiają do `native-data/database-backups` i pozostają zaszyfrowane.
+
+Kopie powstają w tle. Przy dużej bazie wykonanie i sprawdzenie pełnej kopii zajmuje czas. Komunikat „Rozmowa zapisana i zabezpieczona. Kopia bieżąca jest aktualna” potwierdza zakończenie zabezpieczania. Błąd kopii nie oznacza, że sama rozmowa nie została zapisana.
+
+## Przywracanie rozmów
+
+1. Poczekaj na zakończenie pracy agenta.
+2. Kliknij „Przywróć kopię” pod przyciskiem „Pamięć” po lewej stronie.
+3. W otwartym oknie przeczytaj opis i kliknij „Przywróć kopię”.
+4. Program wybierze najnowszą poprawną kopię, zabezpieczy obecną historię i przeprowadzi przywracanie. Nie wybierasz daty, pliku ani klucza.
+5. Sprawdź podsumowanie liczby rozmów i wiadomości przed operacją oraz po niej. Aby wrócić do poprzedniego stanu, użyj „Cofnij przywrócenie” w tym samym oknie.
+
+Niepoprawne lub nieczytelne kopie są pomijane. Jeżeli nie ma poprawnej kopii, historia pozostaje bez zmian. Podczas przywracania edycja rozmów i zamknięcie programu są zablokowane. Jeśli operacja zostanie przerwana, program spróbuje dokończyć ją przy następnym uruchomieniu.
+
+Przywracanie zastępuje historię stanem z kopii; nie łączy dwóch historii. Nowsze wiadomości pozostają w osobnym zabezpieczeniu, dostępnym przez cofnięcie operacji. Zabezpieczenia są przechowywane w `native-data/restore-safety`, osobno od siedmiu kopii dziennych, i zajmują dodatkowe miejsce na dysku.
+
+Kopia bazy nie odtwarza usuniętych zdjęć ani innych plików załączników. Istniejące pliki pozostają na dysku. Przywracanie lokalnej historii nie cofa stanu rozmowy po stronie dostawcy; przywrócone rozmowy rozpoczynają świeży wątek AI z dostępem do lokalnej pamięci.
 
 ## Tokeny i wykres cache
 
@@ -140,7 +170,7 @@ Wymagania: Windows 10/11 x64, Windows PowerShell 5.1, folder z prawem zapisu, in
 
 Zachowaj cały folder programu wraz z tools/codex. Nie uruchamiaj kilku kopii na tej samej bazie. Native-data zawiera rozmowy, załączniki, ustawienia i profil logowania; workspace zawiera pliki robocze. Nie publikuj tych folderów.
 
-Główna baza rozmów, jej kopie oraz indeks tytułów i kategorii są szyfrowane przez Windows DPAPI związane z kontem Windows. Wyszukiwanie działa na odszyfrowanych danych w RAM. Profil i sesje Codexa, załączniki oraz pomiary zużycia pozostają poza tym szyfrowaniem bazy.
+Główna baza rozmów, indeks wyszukiwania i kopie bazy są szyfrowane przez SQLCipher. Klucz w `native-data/archive.key` jest chroniony przez Windows DPAPI związane z kontem Windows. Program odczytuje potrzebne dane do RAM. Profil i sesje Codexa, załączniki oraz pomiary zużycia pozostają poza szyfrowaniem tej bazy.
 
 Przeniesienie zaszyfrowanej bazy na inne konto Windows lub komputer może uniemożliwić odczyt. Brak przenośnego eksportu. Przed ręcznym przenoszeniem lub aktualizacją zachowaj kopię native-data i workspace. Usunięcie rozmowy lokalnie nie usuwa automatycznie danych po stronie dostawcy ani starszych kopii.
 
@@ -156,17 +186,24 @@ Agent nie może zmienić pliku: sprawdź dostęp do systemu i prawa do folderu. 
 
 Brak limitu lub kosztu: konto może nie udostępniać danych, a cennik może nie zawierać modelu. Brak danych nie oznacza zera.
 
+Brak rozmów po przypadkowym usunięciu: użyj „Przywróć kopię” i przeczytaj podsumowanie. Jeśli przywrócony stan nie jest właściwy, wybierz „Cofnij przywrócenie”.
+
 Błąd zapisu bazy: skopiuj ważny tekst, zachowaj native-data i dokładny komunikat. Nie usuwaj archiwum. Błąd aktualizacji: zachowaj poprzednie pliki i komunikaty aktualizatora.
 
 Zgłaszając problem, podaj numer wersji, kroki odtworzenia i treść błędu, bez kluczy API i prywatnych rozmów.
 
-## Co nowego w 0.7.5
+## Co nowego w 0.8.2
 
-Został dodany pasek zużycia w wersji darmowej i blokada programu podczas pracy agenta.
+- Dodano „Przywróć kopię” pod przyciskiem „Pamięć”. Program sam wybiera najnowszą poprawną kopię wszystkich rozmów i pokazuje podsumowanie.
+- Przed przywróceniem zabezpieczana jest obecna historia. Przycisk „Cofnij przywrócenie” pozwala wrócić do stanu sprzed operacji.
+- Przerwane przywracanie jest automatycznie kończone przy następnym uruchomieniu programu.
+- Od poprzedniego wydania 0.7.5 historia i indeks wyszukiwania są przechowywane w szyfrowanej bazie na dysku. Wiadomości są wczytywane stronami, co ogranicza zużycie RAM.
+- Automatycznie powstaje bieżąca kopia bazy po odpowiedzi agenta oraz do siedmiu kopii dziennych.
+- Pierwsze uruchomienie po aktualizacji przenosi dotychczasową historię do nowej bazy i zachowuje stary plik.
 
 ## O programie
 
-MEMOREK 0.7.5
+MEMOREK 0.8.2
 
 Darmowy program autorstwa rWin. Natywna aplikacja Windows napisana w C++/Win32, łącząca rozmowę z agentem Codex i lokalne archiwum. Nie zawiera własnego modelu językowego. Dostęp do usług AI może wymagać opłat lub własnego abonamentu.
 
