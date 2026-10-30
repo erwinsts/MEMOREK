@@ -2,7 +2,7 @@
 
 Darmowy program dla Windows autorstwa **rWin**.
 
-Aktualne wydanie: **0.8.2** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/tag/v0.8.2).
+Aktualne wydanie: **0.8.3** — [pobierz pełny program](https://github.com/erwinsts/MEMOREK/releases/latest).
 
 **Co nowego:** Automatyczne przywracanie rozmów i cofanie przywrócenia, szyfrowana baza na dysku oraz bieżąca kopia i siedem kopii dziennych.
 
